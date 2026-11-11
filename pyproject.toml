@@ -1,0 +1,14 @@
+[project]
+name = "otica-automacao"
+version = "1.0.0"
+description = "Rotina de contato com clientes de uma ótica e painel de indicadores, com rascunhos para revisão humana (dados fictícios)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+otica = "otica.cli:main"
+
+[tool.setuptools]
+packages = ["otica"]

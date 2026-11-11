@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Painel da ótica (dados fictícios)</title>
+<style>
+:root{--fundo:#f6f7f4;--cartao:#fff;--tinta:#1c2420;--suave:#58645d;--linha:#dde2dc;--acento:#17624a;--barra:#cfe3da;--aviso:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--fundo:#101512;--cartao:#171e1a;--tinta:#e6ece8;--suave:#a0aca5;--linha:#27322c;--acento:#6fd1ad;--barra:#1f3a2f;--aviso:#e0b45c}}
+*{box-sizing:border-box}body{margin:0;background:var(--fundo);color:var(--tinta);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:64rem;margin:0 auto;padding:1.5rem 1rem 4rem}
+h1{font-size:1.6rem;margin:0}h2{font-size:1.1rem;margin:2rem 0 .75rem}p.sub{color:var(--suave);margin:.25rem 0 1.25rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:.75rem}
+.card{background:var(--cartao);border:1px solid var(--linha);border-radius:10px;padding:.8rem 1rem}
+.card b{display:block;font-size:1.35rem;white-space:nowrap}.card span{color:var(--suave);font-size:.85rem}
+table{width:100%;border-collapse:collapse;background:var(--cartao);border:1px solid var(--linha);border-radius:10px;overflow:hidden}
+th,td{text-align:left;padding:.5rem .7rem;border-bottom:1px solid var(--linha);font-size:.92rem}th{color:var(--suave);font-weight:600}
+td:nth-child(2) .bar{min-width:6rem}td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.bar{height:.7rem;background:var(--barra);border-radius:3px;min-width:2px}.bar i{display:block;height:100%;background:var(--acento);border-radius:3px}
+.rolagem{overflow-x:auto}.nota{color:var(--aviso);font-size:.88rem}
+blockquote{margin:.4rem 0;padding:.5rem .8rem;border-left:3px solid var(--acento);background:var(--cartao)}
+footer{margin-top:2.5rem;color:var(--suave);font-size:.85rem}
+</style>
+</head>
+<body>
+<main>
+<h1>Painel da ótica</h1>
+<p class="sub">Dados fictícios · posição em 10/11/2026 · gerado por <code>python -m otica painel</code></p>
+
+<div class="cards">
+<div class="card"><b>240</b><span>ordens de serviço</span></div>
+<div class="card"><b>R$ 84.313,50</b><span>vendas (sem canceladas)</span></div>
+<div class="card"><b>R$ 374,73</b><span>ticket médio</span></div>
+<div class="card"><b>5.2 dias</b><span>produção até ficar pronto</span></div>
+<div class="card"><b>17%</b><span>prontos depois do prometido</span></div>
+<div class="card"><b>6%</b><span>cancelamentos</span></div>
+</div>
+
+<h2>Vendas por mês</h2>
+<div class="rolagem"><table><thead><tr><th>mês</th><th></th><th>vendas</th></tr></thead><tbody><tr><td>2025-12</td><td><div class="bar" aria-hidden="true"><i style="width:67%"></i></div></td><td class='n'>R$ 6.420,45</td></tr><tr><td>2026-01</td><td><div class="bar" aria-hidden="true"><i style="width:63%"></i></div></td><td class='n'>R$ 6.038,48</td></tr><tr><td>2026-02</td><td><div class="bar" aria-hidden="true"><i style="width:74%"></i></div></td><td class='n'>R$ 7.142,42</td></tr><tr><td>2026-03</td><td><div class="bar" aria-hidden="true"><i style="width:50%"></i></div></td><td class='n'>R$ 4.796,80</td></tr><tr><td>2026-04</td><td><div class="bar" aria-hidden="true"><i style="width:65%"></i></div></td><td class='n'>R$ 6.214,84</td></tr><tr><td>2026-05</td><td><div class="bar" aria-hidden="true"><i style="width:97%"></i></div></td><td class='n'>R$ 9.322,84</td></tr><tr><td>2026-06</td><td><div class="bar" aria-hidden="true"><i style="width:100%"></i></div></td><td class='n'>R$ 9.605,94</td></tr><tr><td>2026-07</td><td><div class="bar" aria-hidden="true"><i style="width:47%"></i></div></td><td class='n'>R$ 4.467,34</td></tr><tr><td>2026-08</td><td><div class="bar" aria-hidden="true"><i style="width:76%"></i></div></td><td class='n'>R$ 7.281,42</td></tr><tr><td>2026-09</td><td><div class="bar" aria-hidden="true"><i style="width:50%"></i></div></td><td class='n'>R$ 4.789,06</td></tr><tr><td>2026-10</td><td><div class="bar" aria-hidden="true"><i style="width:92%"></i></div></td><td class='n'>R$ 8.796,34</td></tr><tr><td>2026-11</td><td><div class="bar" aria-hidden="true"><i style="width:58%"></i></div></td><td class='n'>R$ 5.582,15</td></tr></tbody></table></div>
+
+<h2>Vendas por produto</h2>
+<div class="rolagem"><table><thead><tr><th>produto</th><th></th><th>vendas</th></tr></thead><tbody><tr><td>óculos de grau</td><td><div class="bar" aria-hidden="true"><i style="width:100%"></i></div></td><td class='n'>R$ 36.222,66</td></tr><tr><td>óculos de sol</td><td><div class="bar" aria-hidden="true"><i style="width:80%"></i></div></td><td class='n'>R$ 28.833,23</td></tr><tr><td>lentes de contato</td><td><div class="bar" aria-hidden="true"><i style="width:41%"></i></div></td><td class='n'>R$ 14.949,32</td></tr><tr><td>conserto</td><td><div class="bar" aria-hidden="true"><i style="width:12%"></i></div></td><td class='n'>R$ 4.308,29</td></tr></tbody></table></div>
+
+<h2>Situação das ordens</h2>
+<table><thead><tr><th>status</th><th>ordens</th></tr></thead><tbody><tr><td>pedido</td><td class='n'>3</td></tr><tr><td>em producao</td><td class='n'>7</td></tr><tr><td>pronto</td><td class='n'>11</td></tr><tr><td>entregue</td><td class='n'>204</td></tr><tr><td>cancelado</td><td class='n'>15</td></tr></tbody></table>
+
+<h2>Quem precisa de contato hoje</h2>
+<table><thead><tr><th>motivo</th><th>clientes</th></tr></thead><tbody><tr><td>Pedidos prontos esperando retirada</td><td class='n'>6</td></tr><tr><td>Pedidos atrasados</td><td class='n'>3</td></tr><tr><td>Receitas vencendo em 30 dias</td><td class='n'>2</td></tr><tr><td>Aniversariantes do dia</td><td class='n'>2</td></tr></tbody></table>
+<p class="nota">A automação só prepara <b>rascunhos</b> para uma pessoa revisar; nada é enviado sozinho. Estimativa de tempo (sob a suposição de 2 min por mensagem escrita à mão): 13 rascunhos ≈ 26 min poupados hoje. É uma estimativa, não uma medição.</p>
+<h2>Exemplos de rascunho</h2>
+<blockquote><small>Pedidos prontos esperando retirada</small><br>Olá, Tânia! Seu pedido (conserto) está pronto e te esperando na loja. Quando puder, passe para retirar. Para não receber mais mensagens, responda SAIR.</blockquote><blockquote><small>Pedidos atrasados</small><br>Olá, Rita! Seu pedido (óculos de grau) está levando um pouco mais que o combinado. Avisaremos assim que ficar pronto. Obrigado pela paciência! Para não receber mais mensagens, responda SAIR.</blockquote><blockquote><small>Receitas vencendo em 30 dias</small><br>Olá, Lucas! A receita do seu último exame está perto de vencer. Quer agendar um novo exame de vista? Para não receber mais mensagens, responda SAIR.</blockquote><blockquote><small>Aniversariantes do dia</small><br>Feliz aniversário, Paulo! Desejamos um ano com muita saúde e boa visão. Para não receber mais mensagens, responda SAIR.</blockquote>
+
+<footer>Projeto de portfólio com dados e nomes fictícios. Sem JavaScript e sem recursos externos.</footer>
+</main>
+</body>
+</html>

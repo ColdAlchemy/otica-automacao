@@ -2,7 +2,7 @@
 
 Automação em Python (só biblioteca padrão) que lê as **ordens de serviço** de uma ótica, decide **quem precisa de contato hoje**, escreve **rascunhos de mensagem para uma pessoa revisar** e gera um **painel HTML** com os indicadores do negócio.
 
-> Desenvolvido por mim com o auxílio do Claude Code. Eu defini o escopo, revisei e estudei o código; o guia `docs/ESTUDO.md` explica cada parte. Surgiu da minha realidade como proprietário de uma ótica, mas **todos os dados, nomes e telefones deste repositório são fictícios** e o projeto **não está ligado ao sistema da minha loja**.
+> Eu defini o escopo, revisei e estudei o código; o guia `docs/ESTUDO.md` explica cada parte. Surgiu da minha realidade como proprietário de uma ótica, mas **todos os dados, nomes e telefones deste repositório são fictícios** e o projeto **não está ligado ao sistema da minha loja**.
 
 **Painel de exemplo:** https://coldalchemy.github.io/otica-automacao/
 
